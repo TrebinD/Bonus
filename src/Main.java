@@ -1,14 +1,18 @@
 public class Main {
     public static void main(String[] args) {
 
-        double nomScore = 123.4;
-        double amountDeposit = 1100.2;
+        int nominalScore = 123;
+        int amountDeposit = 1100;
+        int bonus = amountDeposit / 100;
+        int finalScore;
+
 
         if (amountDeposit > 1000) {
-            nomScore = nomScore + amountDeposit + (amountDeposit / 100);
+            finalScore = nominalScore + amountDeposit + bonus;
         } else {
-            nomScore = nomScore + amountDeposit;
+            finalScore = nominalScore + amountDeposit;
         }
-        System.out.println(nomScore + "руб.");
+        System.out.println(finalScore + "руб.");
     }
+
 }
